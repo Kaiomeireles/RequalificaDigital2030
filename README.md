@@ -2,172 +2,146 @@
 
 > Plataforma de requalificação profissional para o trabalho em 2030+, alinhada aos ODS da ONU.
 
-Aplicativo desenvolvido para a **Global Solution – Mobile Development & IoT (FIAP)**, com foco em apoiar estudantes e profissionais na jornada de **requalificação digital** frente ao impacto da **Inteligência Artificial, automação e análise de dados**.
+Aplicativo desenvolvido para a **Global Solution – Mobile Development & IoT (FIAP)**, com foco em apoiar estudantes e profissionais na jornada de **requalificação digital** frente ao impacto da inteligência artificial, automação e análise de dados.
 
 ---
 
 ## 🎯 Propósito do App
 
-O **RequalificaDigital2030** foi pensado para:
+O RequalificaDigital2030 foi criado para:
 
 - Apoiar a **requalificação profissional** para o futuro do trabalho;
-- Facilitar o acesso a **trilhas de aprendizado** em áreas emergentes (IA, Soft Skills, Sustentabilidade, Gestão);
-- Permitir que o usuário **visualize seu progresso** ao longo da jornada;
-- Conectar educação, tecnologia e inclusão aos **ODS 4, 8, 9 e 10**.
+- Facilitar o acesso a **trilhas de aprendizado** em áreas emergentes;
+- Permitir que o usuário visualize **progresso** de forma clara;
+- Conectar educação e tecnologia aos **ODS 4, 8, 9 e 10**.
 
 ---
 
 ## 🌍 Alinhamento aos ODS da ONU
 
-O app dialoga diretamente com:
+O app está alinhado aos seguintes objetivos:
 
-- **ODS 4 – Educação de Qualidade:** acesso à capacitação tecnológica e contínua;  
-- **ODS 8 – Trabalho Decente e Crescimento Econômico:** requalificação para novas oportunidades;  
-- **ODS 9 – Indústria, Inovação e Infraestrutura:** uso de tecnologia para inovação em educação;  
-- **ODS 10 – Redução das Desigualdades:** inclusão de públicos em transição de carreira ou em vulnerabilidade.
-
----
-
-## 🧭 Arquitetura de Navegação (Híbrida)
-
-A navegação segue o padrão solicitado na GS: **Stack + Drawer + Tabs**.
-
-- **Stack Navigator**
-  - `Login`
-  - `Main` (agrupa o Drawer)
-  - `CursoDetalhe` (detalhes da trilha selecionada)
-
-- **Drawer Navigator**
-  - `Início` (contém as tabs)
-  - `Meu Perfil`
-  - `Sobre o App`
-
-- **Bottom Tab Navigator**
-  - `Home` – visão geral da jornada
-  - `Trilhas` – lista de trilhas de aprendizado
-  - `Progresso` – indicadores de evolução
+- **ODS 4 – Educação de Qualidade**
+- **ODS 8 – Trabalho Decente e Crescimento Econômico**
+- **ODS 9 – Indústria, Inovação e Infraestrutura**
+- **ODS 10 – Redução das Desigualdades**
 
 ---
 
-## 📱 Telas da Aplicação
+# 🧭 Arquitetura de Navegação (Híbrida)
 
-> As imagens abaixo podem ser salvas na pasta `docs/` ou `assets/` do repositório e referenciadas conforme o caminho que vocês escolherem.
+A navegação segue o padrão solicitado na GS:
 
-### 🔐 Login  
-Tela de autenticação e escolha da **área de interesse** do usuário.
+### 🔹 Stack Navigator  
+- Login  
+- Main (contém o Drawer)  
+- CursoDetalhe  
 
-<!-- ![Tela de Login](docs/login.png) -->
+### 🔹 Drawer Navigator  
+- Início  
+- Meu Perfil  
+- Sobre o App  
 
----
-
-### 🏠 Início (Home)  
-Apresenta o contexto da requalificação, próximos passos sugeridos e conexão com os ODS.
-
-<!-- ![Tela Home](docs/home.png) -->
-
----
-
-### 📚 Trilhas  
-Lista de trilhas com título, descrição e **progresso** em cada uma.
-
-<!-- ![Tela Trilhas](docs/trilhas.png) -->
+### 🔹 Bottom Tabs  
+- Home  
+- Trilhas  
+- Progresso  
 
 ---
 
-### 📘 Detalhe da Trilha  
-Mostra informações detalhadas da trilha selecionada e o progresso atual.
-
-<!-- ![Tela Detalhe da Trilha](docs/detalhe-trilha.png) -->
+# 📱 Telas da Aplicação  
+> As imagens abaixo são carregadas automaticamente da pasta `/prints`.
 
 ---
 
-### 📊 Progresso  
-Resumo visual da jornada do usuário: trilhas iniciadas, concluídas, horas estimadas e competências em foco.
-
-<!-- ![Tela Progresso](docs/progresso.png) -->
+## 🔐 **1. Tela de Login**
+![Login](./prints/login.png)
 
 ---
 
-### 👤 Meu Perfil  
-Permite que o usuário personalize **nome** e **resumo profissional**, com dados salvos localmente.
-
-<!-- ![Tela Perfil](docs/perfil.png) -->
+## 🏠 **2. Tela Inicial (Home)**
+![Home](./prints/home.png)
 
 ---
 
-### ℹ️ Sobre o App  
-Explica o contexto da Global Solution, o propósito do app e os ODS envolvidos.
-
-<!-- ![Tela Sobre](docs/sobre.png) -->
+## 📚 **3. Trilhas de Aprendizado**
+![Trilhas](./prints/trilhas.png)
 
 ---
 
-### 📂 Drawer (Menu Lateral)  
-Menu lateral que dá acesso rápido a **Início**, **Meu Perfil** e **Sobre o App**.
-
-<!-- ![Drawer Aberto](docs/drawer.png) -->
+## 📘 **4. Detalhes da Trilha**
+![Detalhe da Trilha](./prints/detalhe.png)
 
 ---
 
-### 🗂 Estrutura do Projeto  
-Organização das pastas e arquivos principais do app.
-
-<!-- ![Estrutura de Pastas](docs/estrutura-projeto.png) -->
+## 📊 **5. Progresso**
+![Progresso](./prints/progresso.png)
 
 ---
 
-## 🧩 Principais Funcionalidades & Componentes
-
-O projeto utiliza os componentes e conceitos pedidos no enunciado:
-
-- Layout e UI:
-  - `View`, `ScrollView`, `Text`
-  - `TextInput`, `Button`, `TouchableOpacity`
-  - `Alert`
-  - `Picker` (seleção da área de interesse)
-- Navegação:
-  - `@react-navigation/stack`
-  - `@react-navigation/drawer`
-  - `@react-navigation/bottom-tabs`
-- Lógica & Hooks:
-  - `useState`, `useEffect`
-- Persistência (desafio atendido):
-  - `@react-native-async-storage/async-storage`  
-    - Salva **e-mail** e **área de interesse** do usuário na tela de Login;
-    - Salva **nome** no perfil do usuário.
+## 👤 **6. Meu Perfil**
+![Meu Perfil](./prints/perfil.png)
 
 ---
 
-## 🛠 Tecnologias Utilizadas
-
-- **React Native** com **Expo**
-- **TypeScript**
-- **React Navigation** (Stack, Drawer, Tabs)
-- **AsyncStorage** para armazenamento local
-- **Expo Web** para execução em navegador
-- Tema visual **NeoFuture Dark** (UI futurista, focada em tecnologia e IA)
+## ℹ️ **7. Sobre o App**
+![Sobre o App](./prints/sobre.png)
 
 ---
 
-## ▶️ Como Rodar o Projeto
+## 📂 **8. Drawer Aberto (Menu Lateral)**  
+![Drawer](./prints/drawer.png)
+
+---
+
+## 🗂️ **9. Estrutura do Projeto (VS Code)**  
+![Estrutura](./prints/estrutura.png)
+
+---
+
+# 🧩 Componentes Utilizados
+
+- `View`, `ScrollView`, `Text`
+- `TextInput`, `Button`, `TouchableOpacity`, `Alert`
+- `Picker` (área de interesse)
+- `useState`, `useEffect`
+- `AsyncStorage` para persistência
+- `StackNavigation`, `DrawerNavigation`, `BottomTabNavigation`
+
+---
+
+# 💾 Persistência de Dados
+
+Utilizamos `AsyncStorage` para armazenar:
+
+- E-mail do usuário  
+- Área de interesse  
+- Nome no perfil  
+
+Esses dados são carregados automaticamente quando o app é aberto novamente.
+
+---
+
+# 🛠 Tecnologias
+
+- React Native com Expo  
+- TypeScript  
+- React Navigation  
+- AsyncStorage  
+- Expo Web  
+- UI personalizada (NeoFuture Dark)  
+
+---
+
+# ▶️ Como Rodar
 
 ```bash
-# Clonar o repositório
-git clone https://github.com/SEU-USUARIO/requalificadigital2030.git
-cd requalificadigital2030
-
-# Instalar dependências
 npm install
-
-# Instalar dependências de navegação (Expo)
 npx expo install @react-navigation/native @react-navigation/stack \
 @react-navigation/bottom-tabs @react-navigation/drawer \
 react-native-screens react-native-safe-area-context \
 react-native-gesture-handler react-native-reanimated \
 @react-native-async-storage/async-storage @react-native-picker/picker
 
-# Rodar no navegador (web)
-npm run web
-
-# Ou abrir no app Expo Go (Android/iOS)
-npx expo start
+npm run web   # para rodar no navegador
+npx expo start  # para rodar no Expo Go
