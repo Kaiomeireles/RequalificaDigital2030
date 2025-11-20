@@ -129,7 +129,12 @@ Esses dados são carregados automaticamente quando o app é aberto novamente.
 - React Navigation  
 - AsyncStorage  
 - Expo Web  
-- UI personalizada (NeoFuture Dark)  
+- UI personalizada (NeoFuture Dark)
+
+## 👥 Integrantes  
+- **KAIO VINICIUS MEIRELES ALVES – RM553282**  
+- **LUCAS ALVES DE SOUZA – RM553956**
+
 
 ---
 
