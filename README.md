@@ -95,7 +95,7 @@ A navegação segue o padrão solicitado na GS:
 ---
 
 ## 🗂️ **9. Estrutura do Projeto (VS Code)**  
-![Estrutura](./prints/estrutura.png)
+![Estrutura](./prints/vscode.png)
 
 ---
 
